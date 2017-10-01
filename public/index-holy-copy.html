@@ -1,0 +1,173 @@
+
+<!DOCTYPE html>
+<html ng-app="myApp">
+<meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1.0, user-scalable=no">
+
+<head>
+   <!-- ******************* START css links ************************* -->
+   <!-- Bootstrap -->
+   <link href="css/bootstrap.min.css" rel="stylesheet">
+   <link rel="stylesheet" type="text/css" href="css/home.css">
+   <!-- ******************* END css links ************************* -->
+</head>
+
+<body>
+
+    <div class="main-body-div container-fluid">
+        <!-- ******************* START Navigation bar ************************* -->
+        <div class="row top-bar">
+            <ul class="list-inline">
+                <li class="top-link">
+                    <a class="home-link" href="#home">HOME</a>
+                </li>
+                <li class="top-link">
+                    <a class="home-link" href="#about">WORK</a>
+                </li>
+                <li class="top-link">
+                    <a class="home-link pictures_menu"  href="#gallery">
+                        PICTURES
+                    </a>
+                    <!-- <ul class="dropdown-menu months-placeholder">
+                </ul> -->
+            </li>
+        </ul>
+    </div>
+
+    <!-- ******************* END Navigation bar ************************* -->
+
+
+    <div class="pictures-dropdown">
+        <ul class="nav navbar-nav menu-items">
+            <li class="nav-item dropdown">
+                <ul class="dropdown-menu months-placeholder">
+                </ul>
+            </li>
+        </ul>
+    </div>
+    
+
+
+    <!-- *************************** START front image ********************************-->
+    <div class="jumbotron row">
+        <div class='front-image'>
+            <div class="front-text">
+                <h1>  Maja Lokar  </h1>
+                <p> Software developer, mountain hiker and programming enthusiast </>
+            </div>
+
+            <div class="front-panel-1"> 
+                    <p> MY SKILLS
+                    </p>    
+            </div>
+
+            <div class="front-panel-2"> 
+                    <p> Links
+                    </p>    
+            </div>
+            
+            <div class="front-panel-3"> 
+                    <p> Gallery
+                    </p>    
+            </div>
+       </div> 
+        <!-- *************************** END front image ********************************-->
+
+
+
+        <!-- *************************** START Sidebar ********************************-->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <ul class='month-list clearfix'>
+                </ul>
+            </ul>
+        </div> 
+        <!-- *************************** END Sidebar ********************************-->
+
+
+
+
+        <!-- *************************** START main-div ********************************-->
+        <div id="page-content-wrapper" class="main-div">
+
+            <div class='pictures-div'>
+
+            </div>    
+
+            <div class='page-navigation-menu'>
+                <nav aria-label="123">
+                    <ul class="pagination pagination-sm justify-content-center">
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <!-- *************************** END main-div ********************************-->
+
+
+
+
+        <!-- *************************** START about div ********************************-->
+        <div class='links-div row'>
+            <div class='about-intro'>
+                <p>My main skills are:  </p>
+
+                <ul>
+                    <li>
+                        <img src="img/html5-css-javascript-logo.png" class="image-logo">
+                        <a href>HTML5, CSS</a> and <a href="">Javascript</a>
+
+                    </li>
+                    <li>
+                        <img src="img/es6-logo.png" class="image-logo">
+                    </li>
+                    <li>
+                        <img src="img/nodejs.png" class="image-logo">
+                    </li>
+                    <li>
+                        <img src="img/angular-logo.png" class="image-logo">
+                    </li>
+                    <li>
+                        <img src="img/bootstrap.png" class="image-logo">
+                    </li>
+                    <li>
+                        <img src="img/jquery-logo.png" class="image-logo">
+                    </li>
+                    <li>
+                        <img src="img/npm-logo.png" class="image-logo">
+                    </li>
+                    <li>
+                        <img src="img/webstorm-logo.png" class="image-logo">
+                    </li>
+                    <li>
+                        <img src="img/ibm-logo.png" class="image-logo">
+                    </li>
+                </ul>
+        </div>
+    </div>
+     <footer>
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 main-color-2">
+              <p class="text-center footer-text">
+                <small>Copyright 2016-2017 © Maja Lokar</small>
+            </p>
+        </div>
+    </div>
+</footer>
+</div>
+<!-- *************************** END about div ********************************-->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
+<script src="scripts/angular.js"></script>
+<script src="scripts/angular-ui-router.js"></script>
+
+<!--- ** scripts for controllers **  -->
+<script src="js/controllers/HomeCtrl.js"></script>
+
+
+
+<!-- home.js bomo kasneje dali v svoj controller -->
+<!-- <script src="home.js"></script> -->
+
+
+
+</body>
+</html>

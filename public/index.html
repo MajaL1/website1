@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html ng-app="myApp">
+<meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1.0, user-scalable=no">
+
+<head>
+   <!-- ******************* START css links ************************* -->
+   <!-- Bootstrap -->
+   <link href="css/bootstrap.min.css" rel="stylesheet">
+   <link rel="stylesheet" type="text/css" href="css/home.css">
+   <!-- ******************* END css links ************************* -->
+</head>
+
+<body>
+	<div ng-include src="'views/common/header.html'"></div>
+    <div data-ui-view="" class="main-body-div">
+    </div>
+    <div ng-include src="'views/common/footer.html'"></div>
+</div>
+<!-- *************************** END about div ********************************-->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
+<script src="scripts/angular.js"></script>
+<script src="scripts/angular-ui-router.js"></script>
+
+<!--- ** scripts for controllers **  -->
+<script src="App.js"></script>
+<script src="js/controllers/HomeCtrl.js"></script>
+<script src="js/controllers/WorkCtrl.js"></script>
+<script src="js/controllers/OtherCtrl.js"></script>
+<script src="js/controllers/GalleryCtrl.js"></script>
+
+
+
+
+
+<!-- home.js bomo kasneje dali v svoj controller -->
+<!-- <script src="home.js"></script> -->
+
+
+
+</body>
+</html>
