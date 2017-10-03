@@ -10,19 +10,24 @@ myApp.config(function ($stateProvider, $urlRouterProvider) {
             templateUrl: "/views/home.html",
             controller: "HomeCtrl"
         })
-       .state("work", {
-            url: "/work",
-            templateUrl: "/views/work.html",
-            controller: "WorkCtrl"
+       .state("about_me", {
+            url: "/about_me",
+            templateUrl: "/views/about_me.html",
+            controller: "AboutMeCtrl"
         })
-       .state("other", {
-            url: "/other",
-            templateUrl: "/views/other.html",
-            controller: "OtherCtrl"
+       .state("concerts", {
+            url: "/concerts",
+            templateUrl: "/views/concerts.html",
+            controller: "ConcertsCtrl"
         })
-       .state("gallery", {
-           url: "/gallery",
-           templateUrl: "/views/gallery.html",
-           controller: "GalleryCtrl"
-       });
+       .state("music", {
+            url: "/music",
+            templateUrl: "/views/music.html",
+            controller: "MusicCtrl"
+        })
+       .state("videos", {
+            url: "/videos",
+            templateUrl: "/views/videos.html",
+            controller: "VideosCtrl"
+        });
 });

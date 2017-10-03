@@ -13,7 +13,7 @@ var notify = require('gulp-notify');
 
 gulp.task('serve', function () {
     gulp.src('public').pipe(webserver({
-        port: 3000,
+        port: 3333,
         livereload: true
     })).pipe(notify("Running webserver!"));
 });
